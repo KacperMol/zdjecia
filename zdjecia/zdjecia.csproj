@@ -10,10 +10,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="fitscreen.png" />
+    <None Remove="next.png" />
+    <None Remove="originalsize.png" />
+    <None Remove="previous.png" />
     <None Remove="rotate.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="fitscreen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="next.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="originalsize.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="previous.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="rotate.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

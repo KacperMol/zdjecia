@@ -20,5 +20,10 @@ namespace zdjecia
         {
             InitializeComponent();
         }
+
+        private void WybierzFolder_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

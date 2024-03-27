@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button Content="Wybierz folder" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Click="WybierzFolder_Click"/>
     </Grid>
 </Window>

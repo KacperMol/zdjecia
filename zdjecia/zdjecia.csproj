@@ -9,4 +9,14 @@
 	  <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="rotate.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="rotate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

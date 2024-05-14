@@ -20,13 +20,30 @@ namespace zdjecia
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<string> paths = new List<string>();
+        private BitmapImage displayedImage;
+        private int displayedImageIndex = 0;
+        private Rotation rotation = 0;
+        private int size = 100;
         public MainWindow()
         {
             InitializeComponent();
         }
         private void WybierzFolder_Click(object sender, RoutedEventArgs e)
         {
-            
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            dialog.ShowNewFolderButton = true;  
+            DialogResult result = dialog.ShowDialog();
+            if(result == System.Windows.Forms.DialogResult.OK) 
+            {
+                paths.Clear();  
+                paths.AddRange(Directory.EnumerateFiles(dialog.SelectedPath, "*.*", SearchOption.TopDirectoryOnly).Where(s =>s.EndsWith(".jpg") || s.EndsWith(".png")));
+
+                if(paths.Count > 0) 
+                {
+
+                }
+            }
         }
     }
 }

@@ -10,9 +10,9 @@
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="100"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -39,13 +39,17 @@
                 <Image Source="previous.png"/>
             </Button.Content>
         </Button>
-        <Button Background="Transparent" Height="30" Grid.Column="3" Grid.Row="1" BorderThickness="0">
-            <Button.Content>
-                <Image Source="next.png"/>
-            </Button.Content>
-        </Button>
+        
     </Grid>
-        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Black">
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Button></Button>
+            </Grid>
+            <Button Background="Transparent" Height="30" Grid.Column="3" Grid.Row="1" BorderThickness="0" HorizontalAlignment="Right">
+                <Button.Content>
+                    <Image Source="next.png"/>
+                </Button.Content>
+            </Button>
+            <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Black">
             <Label Content="100%" Foreground="White"/>
                 <Button Background="Transparent" Height="30" HorizontalAlignment="Right" Grid.Column="3" Grid.Row="1" BorderThickness="0">
                     <Button.Content>

@@ -10,9 +10,9 @@
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="120"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -25,7 +25,7 @@
                 <Image Source="rotate.png"/>
             </Button.Content>
         </Button>
-        <Label x:Name="nazwa" Grid.Row="0" Grid.Column="2" FontSize="20" Foreground="White" HorizontalAlignment="Right" />
+        <Label x:Name="nazwa" Grid.Row="0" Grid.Column="2" FontSize="20" Foreground="White" />
 
 
         <Grid Grid.Row="1">

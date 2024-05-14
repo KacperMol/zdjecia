@@ -20,12 +20,12 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Button Content="Wybierz folder" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" BorderBrush="White" BorderThickness="1" Background="Black" Foreground="White" Click="WybierzFolder_Click"/>
-        <Button Background="Transparent" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Height="30" HorizontalAlignment="Center" BorderThickness="0">
+        <Button Background="Transparent" Click="Obroc_Click" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Height="30" HorizontalAlignment="Center" BorderThickness="0">
             <Button.Content>
                 <Image Source="rotate.png"/>
             </Button.Content>
         </Button>
-        <Label x:Name="nazwa" Grid.Row="0" Grid.Column="2" FontSize="20" Foreground="White" />
+        <Label x:Name="nazwa" Grid.Row="0" Grid.Column="2" FontSize="17" Foreground="White" />
 
 
         <Grid Grid.Row="1">

@@ -41,7 +41,6 @@ namespace zdjecia
 
                 if(paths.Count > 0) 
                 {
-                    dopasuj.IsEnabled = false;
                     orginalne.IsEnabled = true;
                     rotation = 0;
                     WyswietlZdjecie(0);
@@ -85,6 +84,13 @@ namespace zdjecia
                 rotation = 0;
                 WyswietlZdjecie(displayedImageIndex + 1);
             }
+        }
+
+        private void Obroc_Click(object sender, RoutedEventArgs e)
+        {
+            if (paths.Count == 0) return;
+            rotation = (Rotation)((int)(rotation + 1) % 4);
+            WyswietlZdjecie(displayedImageIndex);
         }
     }
 }

@@ -25,7 +25,7 @@
                 <Image Source="rotate.png"/>
             </Button.Content>
         </Button>
-        <Label Content="esa" Grid.Row="0" Grid.Column="2" FontSize="20" Foreground="White" HorizontalAlignment="Right" />
+        <Label x:Name="nazwa" Grid.Row="0" Grid.Column="2" FontSize="20" Foreground="White" HorizontalAlignment="Right" />
 
 
         <Grid Grid.Row="1">
@@ -42,7 +42,7 @@
         
     </Grid>
             <Grid Grid.Row="1" Grid.Column="1">
-                <Button></Button>
+                <Image x:Name="zdjecie"/>
             </Grid>
             <Button Background="Transparent" Height="30" Grid.Column="3" Grid.Row="1" BorderThickness="0" HorizontalAlignment="Right">
                 <Button.Content>
@@ -50,15 +50,25 @@
                 </Button.Content>
             </Button>
             <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Black">
-            <Label Content="100%" Foreground="White"/>
-                <Button Background="Transparent" Height="30" HorizontalAlignment="Right" Grid.Column="3" Grid.Row="1" BorderThickness="0">
+            <Label x:Name="wielkosc" Foreground="White"/>
+                <Button Background="Transparent" x:Name="orginalne" Height="30" HorizontalAlignment="Right" Grid.Column="3" Grid.Row="1" BorderThickness="0">
                     <Button.Content>
                         <Image Source="originalsize.png"/>
                     </Button.Content>
                 </Button>
-                <Button Background="Transparent" Margin="30,0" Height="30" HorizontalAlignment="Right" Grid.Column="3" Grid.Row="1" BorderThickness="0">
+                <Button Background="Transparent" x:Name="dopasuj" Margin="30,0" Height="30" HorizontalAlignment="Right" Grid.Column="3" Grid.Row="1" BorderThickness="0">
                     <Button.Content>
                         <Image Source="fitscreen.png"/>
+                    </Button.Content>
+                </Button>
+                <Button Background="Transparent" x:Name="powieksz" Margin="60,0" Height="30" HorizontalAlignment="Right" Grid.Column="3" Grid.Row="1" BorderThickness="0">
+                    <Button.Content>
+                        <Image Source="zoomin.png"/>
+                    </Button.Content>
+                </Button>
+                <Button Background="Transparent" x:Name="pomniejsz" Margin="90,0" Height="30" HorizontalAlignment="Right" Grid.Column="3" Grid.Row="1" BorderThickness="0">
+                    <Button.Content>
+                        <Image Source="zoomout.png"/>
                     </Button.Content>
                 </Button>
             </Grid>

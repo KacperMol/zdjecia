@@ -41,9 +41,32 @@ namespace zdjecia
 
                 if(paths.Count > 0) 
                 {
-
+                    dopasuj.IsEnabled = false;
+                    orginalne.IsEnabled = true;
+                    rotation = 0;
+                    WyswietlZdjecie(0);
+                }
+                else
+                {
+                    displayedImageIndex = 0;
+                    nazwa.Content = "";
+                    wielkosc.Content = "100%";
+                    zdjecie.Source = null;
                 }
             }
+        }
+        private void WyswietlZdjecie(int i)
+        {
+            displayedImageIndex = i;
+            nazwa.Content = paths[i].Split("\\").Last();
+            displayedImage = new BitmapImage();
+            displayedImage.BeginInit();
+            displayedImage.CacheOption = BitmapCacheOption.OnLoad;
+            displayedImage.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
+            displayedImage.UriSource = new Uri(paths[i]);
+            displayedImage.Rotation = rotation;
+            displayedImage.EndInit();
+            zdjecie.Source = displayedImage;
         }
     }
 }

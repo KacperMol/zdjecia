@@ -68,5 +68,23 @@ namespace zdjecia
             displayedImage.EndInit();
             zdjecie.Source = displayedImage;
         }
+
+        private void Poprzednie_Click(object sender, RoutedEventArgs e)
+        {
+            if(displayedImageIndex > 0)
+            {
+                rotation = 0;
+                WyswietlZdjecie(displayedImageIndex - 1);
+            }
+        }
+
+        private void Kolejne_Click(object sender, RoutedEventArgs e)
+        {
+            if (displayedImageIndex < paths.Count - 1)
+            {
+                rotation = 0;
+                WyswietlZdjecie(displayedImageIndex + 1);
+            }
+        }
     }
 }
